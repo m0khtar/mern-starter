@@ -3,10 +3,9 @@ import { IUser, User } from "../models/user";
 
 const createRandomUser = (): IUser => {
   return {
-    id: faker.datatype.uuid(),
     email: faker.internet.email(),
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
+    firstname: faker.name.firstName(),
+    lastname: faker.name.lastName(),
   };
 };
 
